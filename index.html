@@ -1,0 +1,35 @@
+<!--
+Adapted from https://stackoverflow.com/questions/40456048/random-html-page-redirect
+Stack Exchange user contributions licensed under CC BY-SA
+-->
+
+<html>
+
+<head>
+
+<script>
+	// URL list
+	var randURLs = [
+		"https://sdesabbata.github.io/r-for-geographic-data-science/introduction-to-r.html",
+		"https://sdesabbata.github.io/r-for-geographic-data-science/r-programming.html",
+		"https://sdesabbata.github.io/r-for-geographic-data-science/selection-and-manipulation.html"
+	];
+
+	// Get a random number between 1 and 3
+	var randNum = Math.floor(Math.random() * 3) + 1;
+
+	// Redirect
+	window.open(randURLs[randNum]);
+</script>
+
+</head>
+
+<body>
+
+<h1>Redirecting to page</h1>
+
+You will now be redirect to one of three possible pages. Please allow redirect from this page if currently blocked by your browser.
+
+</body>
+
+</html>
